@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.VisualBasic.FileIO;
 using Roommates.Models;
 using Roommates.Repositories;
 
@@ -16,7 +15,7 @@ namespace Roommates
 
         static void Main(string[] args)
         {
-            //RoomRepository roomRepo = new RoomRepository(CONNECTION_STRING);
+            RoomRepository roomRepo = new RoomRepository(CONNECTION_STRING);
 
             //Console.WriteLine("Getting All Rooms:");
             //Console.WriteLine();
@@ -50,9 +49,9 @@ namespace Roommates
 
             //Room updatedBathroom = new Room
             //{
-            //    Id = 7,
+            //    Id = 4,
             //    Name = "Bathroom",
-            //    MaxOccupancy = 2
+            //    MaxOccupancy = 1
             //};
 
             //roomRepo.Update(updatedBathroom);
@@ -94,7 +93,7 @@ namespace Roommates
             //    ");
             //}
 
-            RoomRepository roomRepo = new RoomRepository(CONNECTION_STRING);
+          //RoomRepository roomRepo = new RoomRepository(CONNECTION_STRING);
             RoommateRepository roommateRepo = new RoommateRepository(CONNECTION_STRING);
 
             int choice = -1;
